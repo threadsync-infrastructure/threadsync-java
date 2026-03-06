@@ -8,20 +8,37 @@ Official Java SDK for the [ThreadSync](https://www.threadsync.io) enterprise dat
 
 ## Installation
 
-### Maven
-
-```xml
-<dependency>
-  <groupId>io.threadsync</groupId>
-  <artifactId>threadsync-sdk</artifactId>
-  <version>0.1.0</version>
-</dependency>
-```
+> **Preview**: SDKs are in preview and installed from GitHub via [JitPack](https://jitpack.io). Maven Central packages will be available at GA.
 
 ### Gradle
 
 ```groovy
-implementation 'io.threadsync:threadsync-sdk:0.1.0'
+// Add JitPack repository
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.threadsync-infrastructure:threadsync-java:main-SNAPSHOT'
+}
+```
+
+### Maven
+
+```xml
+<!-- Add JitPack repository -->
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+
+<dependency>
+  <groupId>com.github.threadsync-infrastructure</groupId>
+  <artifactId>threadsync-java</artifactId>
+  <version>main-SNAPSHOT</version>
+</dependency>
 ```
 
 ## Quick Start
